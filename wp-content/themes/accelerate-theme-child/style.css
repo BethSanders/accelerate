@@ -12,6 +12,8 @@
 
 @import url("../accelerate-theme/style.css");
 
+
+/* Homepage */
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 440px;
@@ -27,7 +29,19 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
-/* blog post on homepage */
+/* Featured work on homepage */
+ul.homepage-featured-work {
+	list-style-type:none;
+	margin: 45px 0 100px 0;
+}
+
+ul li.individual-featured-work {
+	display:inline-block;
+	padding-right: 15px;
+}
+
+
+/* Blog post on homepage */
 .blog-post {
 	width: 50%;
 }
@@ -53,3 +67,37 @@
 	text-transform: uppercase;
 }
 
+/* Case Studies */
+
+article.case-study {
+	margin: 40px 0 0;
+}
+
+aside.case-study-sidebar {
+	float: left;
+	width: 300px;
+	margin: 0 40px 0 0;
+}
+
+div.case-study-images {
+	float: left;
+	width: 608px;
+}
+
+div.case-study-images  img {
+	margin-bottom: 50px;
+	border: 1px solid #dddddd;
+}
+
+/* Case Studies Archive Page */
+
+h2.archive-title-fontsize {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+h5.archive-services-fontsize {
+	font-size: 13px;
+	font-weight: lighter;
+	color: gray;
+}
