@@ -25,6 +25,11 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#masthead nav ul  li{
+	display: inline-block;
+	padding-left: 40px;
+}
+
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -67,6 +72,23 @@ ul li.individual-featured-work {
 	text-transform: uppercase;
 }
 
+/* About Page */
+
+section.home-page.about-page {
+	height: 350px;
+}
+
+h2.about-text {
+	color: white;
+	text-align: center;
+	width: 560px;
+}
+
+h2.about-text span {
+	color: #45ac9d;
+}
+
+
 /* Case Studies */
 
 article.case-study {
@@ -103,8 +125,9 @@ h5.archive-services-fontsize {
 }
 
 /* Contact Us Page */
-div#content {
-	width: 650px;
+.contact #content {
+	width: 75%;
+	margin: 0 auto;
 }
 
 .nf-form-title {
@@ -144,3 +167,6 @@ div #nf-field-4 {
 	text-align: center;
 	text-decoration: none;
 }
+
+/* 404 Page */
+

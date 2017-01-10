@@ -25,7 +25,7 @@
  * @since Accelerate Marketing 1.0
  */
  
- function create_custom_post_types() {
+function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
             'labels' => array(
@@ -37,5 +37,27 @@
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+	register_post_type('services',
+		array(
+			'labels' => array(
+				'name' => __( 'Services' ),
+				'singular_name' => __( 'Service' )
+		),
+		'public' => true,
+		'has_archive' => false,
+		'rewrite' => array( 'slug' => 'services' ),
+		'supports' => array('title', 'editor', 'page-attributes') 
+    )
+);
 }
 add_action( 'init', 'create_custom_post_types' );
+
+add_filter( 'body_class','accelerate_body_classes' );
+function accelerate_body_classes( $classes ) {
+ 
+  if (is_page('contact-us') ) {
+    $classes[] = 'contact';
+  }
+    return $classes;
+     
+}
